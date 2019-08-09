@@ -1,0 +1,19 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+int main()
+{
+   int x,p,s=0;
+   cin>>x>>p;
+   p=100-p;
+   while(x>0)
+   {
+       s+=x;
+       x=(p*x)/100;
+   }
+   cout<<s;
+   return 0;
+}
